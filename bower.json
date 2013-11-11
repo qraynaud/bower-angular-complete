@@ -1,0 +1,15 @@
+{
+  "name": "angular-complete",
+  "version": "v1.2.0-rc.2",
+  "description": "AngularJS with all core directives and i18n files",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "directives",
+    "i18n",
+    "internationalization"
+  ],
+  "main": [  "./angular-animate.js", "./angular-cookies.js", "./angular-loader.js", "./angular-mocks.js", "./angular-resource.js", "./angular-route.js", "./angular-sanitize.js", "./angular-scenario.js", "./angular-touch.js", "./angular.js" ],
+  "license": "MIT"
+}
