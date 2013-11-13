@@ -1,0 +1,15 @@
+{
+  "name": "angular-complete",
+  "version": "v0.9.9",
+  "description": "All AngularJS releases, including core directives and i18n files",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "directives",
+    "i18n",
+    "internationalization"
+  ],
+  "main": [  "./angular-ie-compat.js", "./angular-scenario.js", "./angular.js" ],
+  "license": "MIT"
+}
