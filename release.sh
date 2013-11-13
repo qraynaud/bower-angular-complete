@@ -42,7 +42,7 @@ cat <<EOF > bower.json
 EOF
 
 git init
-git remote add origin https://github.com/datapad/bower-angular-complete.git
+cp ../../.git/config .git/
 git add -A
 git commit -m "$name"
 git tag "$name"
