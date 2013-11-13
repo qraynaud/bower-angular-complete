@@ -27,7 +27,7 @@ cat <<EOF > bower.json
 {
   "name": "angular-complete",
   "version": "$name",
-  "description": "AngularJS with all core directives and i18n files",
+  "description": "All AngularJS releases, including core directives and i18n files",
   "keywords": [
     "angular",
     "angularjs",
