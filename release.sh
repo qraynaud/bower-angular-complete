@@ -3,6 +3,13 @@ set -ue
 
 ref=$1
 
+depthopt=''
+if find . -depth 1 >/dev/null 2>/dev/null; then
+  depthopt='-depth'
+else
+  depthopt='-maxdepth'
+fi
+
 rm -rf repo/
 if [[ ${ref:0:1} == "v" ]]; then
   name=$ref
@@ -19,7 +26,7 @@ source ../build/$(git describe --tags --abbrev=0).sh
 
 cd build/
 
-IFS=$'\n' LINES=($(find . -depth 1 | grep -v '\.min\.js$' | awk '{print "\"" $0 "\""}'))
+IFS=$'\n' LINES=($(find . $depthopt 1 | grep -v '\.min\.js$' | awk '{print "\"" $0 "\""}'))
 MAIN=$(printf ", %s" "${LINES[@]}")
 MAIN=${MAIN:1}
 
@@ -44,6 +51,6 @@ EOF
 git init
 cp ../../.git/config .git/
 git add -A
-git commit -m "$name"
+git commit -m "$name" --no-verify
 git tag "$name"
 git push origin --tags -f
