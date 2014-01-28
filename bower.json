@@ -1,0 +1,15 @@
+{
+  "name": "angular-complete",
+  "version": "v1.2.10",
+  "description": "All AngularJS releases, including core directives and i18n files",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "directives",
+    "i18n",
+    "internationalization"
+  ],
+  "main": [  ".", "./angular-scenario.js", "./angular-csp.css", "./angular.js", "./angular-loader.js", "./angular-touch.js", "./angular-mocks.js", "./angular-sanitize.js", "./angular-resource.js", "./angular-animate.js", "./angular-route.js", "./angular-cookies.js", "./angular-animate-errors.json", "./angular-errors.json", "./angular-cookies-errors.json", "./angular-loader-errors.json", "./angular-animate.min.js.map", "./angular-cookies.min.js.map", "./angular-touch-errors.json", "./angular.min.js.map", "./angular-resource-errors.json", "./angular-loader.min.js.map", "./angular-touch.min.js.map", "./angular-route-errors.json", "./angular-resource.min.js.map", "./angular-sanitize-errors.json", "./angular-route.min.js.map", "./angular-sanitize.min.js.map", "./i18n" ],
+  "license": "MIT"
+}
